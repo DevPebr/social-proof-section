@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'League Spartan', sans-serif;
+    background-color: hsl(0, 0%, 100%);
+    background-image: url(../images/bg-pattern-top-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: top left;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 200px;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    font-family: 'League Spartan', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+   
+}
+
+
+.info-section h1 {
+    font-size: 3rem;
+    color: hsl(300, 43%, 22%);
+    width: 420px;
+    padding-bottom: 20px;
+}
+
+.info-section p {
+    color: hsl(303, 10%, 53%);
+    font-weight: 500;
+    width: 400px;
+    line-height: 23px;
+    font-size: 1rem;
+}
+
+.rate-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 500px;
+    align-items: flex-end;
+    justify-content: center;
+    
+}
+
+.rate-example {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-size: 1rem;
+    font-weight: 700;
+    color: hsl(300, 43%, 22%);
+    border-radius: 5px;
+    background-color: hsl(300, 24%, 96%);
+    width: 400px;
+    height: 50px;
+}
+
+.rate {
+    margin-right: 100px;
+}
+
+.rate2 {
+    margin-right: 50px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    height: 30vh;
+    gap: 15px;
+}
+
+blockquote {
+    border-radius: 8px;
+    background-color: hsl(300, 43%, 22%);
+    padding: 30px;
+    
+}
+
+.avatar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 25px;
+}
+
+.avatar-img img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.avatar-desc  {
+    line-height: 20px;
+}
+
+.avatar-desc strong {
+    color: hsl(0, 0%, 100%);
+    letter-spacing: 0.06rem;
+}
+
+.avatar-desc p {
+    color: hsl(333, 80%, 67%);
+}
+
+blockquote p {
+    color: hsl(0, 0%, 100%);
+    line-height: 16px;
+
+}
+.anne-desc {
+    width: 260px;
+    font-size: 15px;
+}
+
+.irene-desc {
+    width: 245px;
+    font-size: 15px;
+}
+
+.colton-desc {
+    font-size: 15px;
+    width: 260px;
+}
+
+@media (max-width: 1312px) {
+    body {
+        height: 250vh;
+    }
+
+    .container {
+        height: 100%;
+    }
+
+    header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+    }
+
+    .info-section p {
+        text-align: center;
+        padding-bottom: 15px;
+    }
+
+    .rate-section {
+        align-items: center;
+    }
+
+    .rate-example {
+        margin: 0;
+    }
+
+    footer {
+        
+        height: 100vh;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    blockquote {
+        width: 320px;
+        height: 195px;
+    }
+}
+
+@media (max-width: 895px) {
+    .container {
+        width: 100%;
+        align-items: center;
+    }
+}
+
+@media (max-width: 510px) {
+   .info-section h1 {
+    font-size: 2.5rem;
+    width: 280px;
+   }
+   
+    .info-section p {
+    width: 280px;
+    margin: 0 auto;
+    font-size: 0.9rem;
+    
+   }
+
+   .rate-section {
+    
+    width: 280px;
+   }
+
+   .rate-example {
+    flex-direction: column;
+    gap: 5px;
+    width: 250px;
+   }
+
+   footer {
+    
+    width: 300px;
+   }
+
+   blockquote {
+    width: 300px;
+   }
+}
+
+@media (max-width: 420px) {
+
+    body {
+        background-image: url(../images/bg-pattern-top-mobile.svg);
+        background-repeat: no-repeat;
+        background-position: top left;
+    }
+
+    .container {
+        background-image: url(../images/bg-pattern-bottom-desktop.svg);
+        background-repeat: no-repeat;
+        background-position: right bottom;
+    }
+
+    header {
+        width: 350px;
+       
+
+    }
+
+    .info-section h1 {
+        width: 250px;
+        font-size: 2.2rem;
+    
+    }
+
+    .info-section p {
+        font-size: 15px;
+        
+    }
+
+    .rate-section {
+        
+        width: 350px;
+    }
+
+    .rate-example {
+        height: 70px;
+        width: 280px;
+    }
+
+    footer {
+        width: 350px;
+        height: 130vh;
+
+    }
+
+    blockquote {
+        padding: 20px;
+        height: 210px;
+        width: 280px;
+        margin: 0 auto;
+    }
+
+    .avatar-desc {
+        font-size: 15px;
+    }
+
+    .avatar-img img {
+        width: 30px;
+        height: 30px;
+    }
+    
+
+    .colton-desc {
+        font-size: 15px;
+        line-height: 16px;
+        width: 230px;
+    }
+
+    .irene-desc {
+        font-size: 15px;
+        line-height: 16px;
+        width: 240px;
+    }
+
+    .anne-desc {
+        width: 235px;
+        font-size: 15px;
+        line-height: 16px;
+    }
+}
+
+@media (max-width: 320px) {
+    .container {
+        margin-left: 100px;
+    }
+}
