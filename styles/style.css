@@ -160,7 +160,7 @@ blockquote p {
 
 @media (max-width: 1312px) {
     body {
-        height: 170vh;
+        height: 220vh;
     }
 
     .container {
@@ -192,7 +192,7 @@ blockquote p {
         height: 620px;
         flex-direction: column;
         align-items: center;
-        gap: 0;
+        
 
     }
 
@@ -288,7 +288,7 @@ blockquote p {
 
     footer {
         
-        gap: 0;
+        
         width: 350px;
         height: 650px;
         
